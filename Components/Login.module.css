@@ -1,0 +1,112 @@
+/* Login.module.css */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #3d7787;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .login {
+    background-color: #16534e;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h1 {
+    font-size: 20px;
+    color: rgb(242, 80, 10);
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f7e00f;
+    padding-bottom: 5px;
+  }
+  
+  .section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #78ef72;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eae3e3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+  }
+  
+  .error {
+    margin: 0;
+    font-size: 12px;
+    color: #ff4c4c;
+  }
+  
+  .submitBtn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .submitBtn input {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn input:hover {
+    background-color: #0000b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .all {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .login {
+      width: 100%;
+    }
+  
+    .submitBtn input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .all {
+      grid-template-columns: 1fr;
+    }
+  
+    .login {
+      width: 100%;
+    }
+  
+    .submitBtn input {
+      width: 100%;
+    }
+  }
+  

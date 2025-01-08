@@ -1,0 +1,107 @@
+/* Body styling */
+#body {
+  font-family: Arial, sans-serif;
+  background-color: #3d7787;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Login container styling */
+#login {
+  background-color: #16534e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner div grid layout */
+#innerdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Section header styling */
+h1 {
+  font-size: 20px;
+  color: rgb(242, 80, 10);
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f7e00f;
+  padding-bottom: 5px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #78ef72;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #eae3e3;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+/* Error message styling */
+p {
+  margin: 0;
+  font-size: 12px;
+  color: #ff4c4c;
+}
+
+/* Submit button container styling */
+#submitbtn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0000b3;
+}
+
+/* Section spacing */
+#company,
+#Contact,
+#Address {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #innerdiv {
+    grid-template-columns: 1fr;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
